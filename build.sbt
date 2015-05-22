@@ -15,3 +15,7 @@ lazy val commonSettings = Seq(
 lazy val root = (project in file("."))
   .settings(commonSettings: _*)
   .settings(name := "swift-eta")
+
+// Run options
+fork in run := true
+javaOptions in run += "-Xmx8G"
