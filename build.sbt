@@ -18,4 +18,3 @@ lazy val root = (project in file("."))
 
 // Run options
 fork in run := true
-javaOptions in run += "-Xmx8G"
